@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full-Stack Project Request Form</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Hi there, I'm Krishna</h1>
+        <br />
+        <h3 style="color:rgb(54, 54, 196)">I can't wait to hear about you and schedule a quick consulting! Here are a couple of questions to help us connect.</h3>
+        
+        <br />
+        <p style="color: red;">Please fill out the form below, and we'll get back to you within 1-2 working days.</p>
+
+        <form action="/submit" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="project-details">Project Details:</label>
+                <textarea id="project-details" name="project-details" rows="5" placeholder="Describe your project requirements, goals, and any specific technologies you wish to use" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="budget">Estimated Budget:</label>
+                <input type="text" id="budget" name="budget" placeholder="Enter your estimated budget" required>
+            </div>
+
+            <div class="form-group">
+                <label for="timeline">Expected Timeline:</label>
+                <input type="text" id="timeline" name="timeline" placeholder="Enter your expected timeline" required>
+            </div>
+
+            <div class="form-group">
+                <label for="hear-about-us">How did you hear about us?</label>
+                <select id="hear-about-us" name="hear-about-us" required>
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="search-engine">Search Engine</option>
+                    <option value="social-media">Social Media</option>
+                    <option value="referral">Referral</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Request</button>
+        </form>
+
+        <div class="footer">
+            <p>If you have any immediate questions, feel free to <a href="mailto:mallekrishna77@example.com">contact us</a>.</p>
+        </div>
+    </div>
+</body>
+</html>
